@@ -1,0 +1,28 @@
+<!-- Deliverables:
+
+1. The 'li' that you are appending to the unordered list, make sure that it has a delete button.
+
+2. When you click on that delete button, then that particular user's details should be removed from the screen and from the local storage. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="handleFormSubmit(event)">
+        <label for="username">Username:</label>
+        <input type="text" id="username" autocomplete="username">
+        <label for="email">Email:</label>
+        <input type="email" id="email" autocomplete="email">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" autocomplete="phone">
+        <button type="submit">submit</button>
+    </form>
+    <ul id="userList"></ul>
+</body>
+<script src="index.js"></script>
+</html>
